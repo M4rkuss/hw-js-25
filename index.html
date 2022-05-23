@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW JS 25</title>
+</head>
+<body>
+
+<div class="d-flex" style="display: flex; justify-content: space-around; align-items: center">
+    <div class="item">
+        <p>Photo 1</p>
+        <img src="https://cdn.pixabay.com/photo/2022/04/23/07/38/lin-zhi-7151302_1280.jpg" alt="Photo 1" style="width: 300px;"
+             onload="completeMessage('photo 1 load OK')"
+             onerror="errorMessage('photo 1 load error')"/>
+    </div>
+    <div class="item">
+        <p>Photo 2</p>
+        <img src="https://cdn.pixabay.com/photo/2019/11/19/06/02/seascape-4636549_1280.jpg" alt="Photo 2" style="width: 300px;"
+             onload="completeMessage('photo 2 load OK')"
+             onerror="errorMessage('photo 2 load error')"/>
+    </div>
+    <div class="item">
+        <p>Photo 3 (mistake in URL)</p>
+        <img id="img" src="https://cdn.pixabay.com/photo/2022/02/17/10/21/book-7018452_1280.jp" alt="Photo 3" style="width: 300px;"
+             onload="completeMessage('photo 3 load OK')"
+             onerror="errorMessage('photo 3 load error')">
+    </div>
+</div>
+<br>
+<p>Complete download: <br> <span id="completeDownload"></span></p>
+<p>Error download: <br> <span id="errorDownload"></span></p>
+
+
+<script src="script.js"></script>
+</body>
+</html>
